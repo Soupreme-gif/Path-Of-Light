@@ -1,0 +1,291 @@
+body { 
+
+       background-color: #40407A;
+       color: #40407A;
+       font-family: Arial; 
+       margin: 0; 
+
+}
+
+* { box-sizing: border-box; }
+
+#wrapper { 
+
+           background-color: #F5F5F5; 
+           padding: 2em; 
+
+}
+
+.home { 
+
+        height: 20vh; 
+        padding-top: 2em; 
+        padding-left: 10%;
+
+}
+
+.content {
+
+           height: 20vh; 
+           padding-top: 2em; 
+           padding-left: 10%; 
+
+ }
+
+ul { 
+
+     margin: 0px; 
+     padding-right: 2em; 
+     font-size: 1.2em; 
+
+}
+
+nav { 
+
+      text-align: right; 
+      background-color: #FFFFFF; 
+      margin: 0px; 
+      padding-top: 0.5em; 
+      padding-bottom: 1em; 
+      padding-right: 0px; 
+      height: auto; 
+      width: 100%; 
+      top: 0px; 
+      left: 0px; 
+      z-index: 9999; 
+
+}
+
+nav:link { color: #3F2860; }
+nav:visited { color: #497777; }
+nav:hover { color: A26100; }
+
+nav li { 
+         
+         display: inline; 
+         padding-left: 2em; 
+         width: 30%;
+
+}
+
+nav a { text-decoration: none; }
+
+h2 { margin: 0; }
+
+header {
+
+         font-size: 90%;
+         min-height: 200px;
+         background-image: url(sunrise.jpg); 
+         background-color: 100% 100%; 
+         background-color: #40407A; 
+         color: #FFFFFF; 
+         margin-top: 50px; 
+
+}
+
+header a { text-decoration: none; }
+header:link { color: #FFFFFF; }
+header:visited { color: #FFFFFF; }
+header:hover { color: #8F92B2;
+               transiton-property: color;
+               transition-duration: 10s;
+}
+
+section {
+
+   padding-left: .5em;
+   padding-right: .5em;
+
+}
+
+footer { 
+
+         font-size: small; 
+         font-style: italic; 
+         text-align: center; 
+         clear: right;
+
+ }
+
+#mathero { 
+
+           display: none;
+           height: 300px; 
+           background-image: url(yogamat.jpg); 
+           background-color: 100% 100%; 
+           background-repeat: no-repeat;  
+
+}
+
+#loungehero {
+
+              display: none;
+              height: 300px; 
+              background-image: url(yogalounge.jpg); 
+              background-color: 100% 100%; 
+
+}
+
+#flow {
+
+    display: block;
+
+}
+
+li { font-size: 90%; }
+
+dd { font-size: 90%; }
+
+form {
+
+ display: flex;
+ flex-flow: column nowrap; 
+
+} input, datalist textarea { margin-bottom: .5em; }
+
+table {
+
+  border: 1px solid #40407A;
+  margin-bottom: 1em;
+  min-width: 400px;
+  border-collapse: collapse;
+
+}
+
+caption{
+
+   margin: 1em;
+   font-weight: bold;
+   font-size: 120%;
+
+}
+
+thead th, td {
+
+  padding: 0.5em;
+  border: 1px solid #40407A;
+
+}
+
+body table:nth-of-type(even)
+{
+
+   background-color: #D7E8E9;
+
+}
+
+audio {
+
+margin-bottom: 1em;
+
+}
+
+
+@media screen and (min-width: 600px)
+{
+ 
+ nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+
+}
+  nav li{
+
+  width: 7em;
+
+}
+  
+  section {
+
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+#mathero {
+
+  display: block;
+  padding-bottom: 1em;
+
+}
+
+ #loungehero {
+
+  display: block;
+  padding-bottom: 1em;
+
+}
+
+ #flow {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+
+ form {
+ 
+  display: grid;
+  grid-gap: 1em;
+  width: 60%;
+  max-width: 40em;
+  grid-template-rows: auto auto;
+  grid-template-columns: 9em 1fr;
+ 
+}  submit {
+
+   grid-column: 2;
+   width: 9em;
+
+}
+
+audio {
+
+margin-bottom: 1em;
+
+}
+
+@media screen and (min-width: 1024px)
+{
+
+  header {
+
+  font-size: 120%;
+
+}
+
+  nav {
+ 
+  font-weight: bold;
+
+}
+
+ .home {
+  
+   height: 50vh;
+   padding-top: 5em;
+   padding-left: 8em;
+
+}
+  
+  .content {
+
+   height: 30vh;
+   padding-top: 2em;
+   padding-left: 8em;
+
+}
+
+   #wrapper {
+
+  margin: auto;
+  width: 80%;
+
+}
+
+}
